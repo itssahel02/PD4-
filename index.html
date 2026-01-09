@@ -1,86 +1,105 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <title>Job Event Reflectie - Sahel Sediqi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-            line-height: 1.6;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        section {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Event Reflectie - Sahel Sediqi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset en basis */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header { background: #2c3e50; color: white; padding: 2rem 1rem; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.1rem; color: #bdc3c7; }
+
+    /* Nav */
+    nav { display: flex; justify-content: center; gap: 2rem; background: #34495e; padding: 0.8rem 0; }
+    nav a { color: white; font-weight: 600; transition: color 0.3s; }
+    nav a:hover { color: #f39c12; }
+
+    /* Sections */
+    section { background: white; margin: 2rem auto; padding: 2rem; border-radius: 10px; max-width: 900px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    section h2 { color: #2c3e50; margin-bottom: 1rem; }
+
+    /* Lists */
+    ul { list-style-type: disc; padding-left: 1.5rem; }
+    li { margin-bottom: 0.5rem; }
+
+    /* Cards voor bedrijven of ervaringen */
+    .card { background: #ecf0f1; padding: 1rem 1.5rem; border-radius: 8px; margin-bottom: 1rem; transition: transform 0.3s, box-shadow 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0,0,0,0.15); }
+
+    /* Footer */
+    footer { text-align: center; padding: 1.5rem 0; color: #7f8c8d; font-size: 0.9rem; }
+
+    /* Responsief */
+    @media(max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav { flex-direction: column; gap: 1rem; }
+    }
+  </style>
 </head>
 <body>
 
-<h1>Job Event Reflectie</h1>
-<p><strong>Naam:</strong> Sahel Sediqi<br>
-<strong>Opleiding:</strong> HBO-ICT – De Haagse Hogeschool</p>
+  <header>
+    <h1>Job Event Reflectie</h1>
+    <p>Sahel Sediqi - HBO-ICT, De Haagse Hogeschool</p>
+  </header>
 
-<section>
-<h2>Masterclass Politie</h2>
-<p>
-Tijdens het job-event ben ik begonnen bij een masterclass van de politie. 
-Hier werd uitgelegd welke werkzaamheden de ICT-afdeling uitvoert, zoals cybercrime,
-hacken en internationale samenwerkingen. 
-Ik vond dit erg interessant en het liet zien hoe sterk Nederland is op ICT-gebied binnen de politie.
-</p>
-</section>
+  <nav>
+    <a href="#masterclass">Masterclass</a>
+    <a href="#bedrijven">Bedrijven</a>
+    <a href="#werkzaamheden">Werkzaamheden</a>
+    <a href="#elevator">Elevator Pitch</a>
+  </nav>
 
-<section>
-<h2>Bedrijven die ik interessant vind</h2>
-<ul>
-    <li><strong>Capgemini:</strong> professionele werksfeer, goede begeleiding en doorgroeimogelijkheden.</li>
-    <li><strong>Netcompany:</strong> IT-consultancy en digitale oplossingen voor grote organisaties.</li>
-    <li><strong>BetaBit:</strong> veel werken met Azure en goede groeimogelijkheden.</li>
-    <li><strong>Quintor:</strong> vergelijkbaar met Capgemini, interessante opdrachten.</li>
-    <li><strong>Politie (ICT):</strong> techniek combineren met maatschappelijke impact.</li>
-</ul>
-</section>
+  <section id="masterclass">
+    <h2>Masterclass Politie</h2>
+    <p>Tijdens het job-event ben ik begonnen bij een masterclass van de politie. Er werd uitleg gegeven over ICT-werkzaamheden, hacken en internationale samenwerking. Het liet zien hoe sterk Nederland is in ICT bij de politie.</p>
+  </section>
 
-<section>
-<h2>Bedrijven die mij minder aanspreken</h2>
-<ul>
-    <li><strong>Swisscom:</strong> vooral telecommunicatie, minder aansluiting bij mijn interesses.</li>
-    <li><strong>Efficy:</strong> CRM-platform, inhoud sprak mij minder aan.</li>
-</ul>
-</section>
+  <section id="bedrijven">
+    <h2>Bedrijven die ik interessant vind</h2>
+    <div class="card"><strong>Capgemini:</strong> Professionele werksfeer, goede begeleiding en doorgroeimogelijkheden.</div>
+    <div class="card"><strong>Netcompany:</strong> IT-consultancy en digitale oplossingen voor grote organisaties.</div>
+    <div class="card"><strong>BetaBit:</strong> Veel werken met Azure en goede groeimogelijkheden.</div>
+    <div class="card"><strong>Quintor:</strong> Interessante opdrachten, vergelijkbaar met Capgemini.</div>
+    <div class="card"><strong>Politie (ICT):</strong> Combinatie van techniek en maatschappelijke impact.</div>
 
-<section>
-<h2>Werkzaamheden</h2>
-<p><strong>Leuk:</strong></p>
-<ul>
-    <li>IT-consultancy</li>
-    <li>Software development</li>
-    <li>Cloud engineering (Azure)</li>
-    <li>ICT bij de politie</li>
-</ul>
+    <h3>Bedrijven die mij minder aanspreken</h3>
+    <div class="card"><strong>Swisscom:</strong> Vooral telecommunicatie, minder aansluiting bij mijn interesses.</div>
+    <div class="card"><strong>Efficy:</strong> CRM-platform, inhoud sprak mij minder aan.</div>
+  </section>
 
-<p><strong>Minder leuk:</strong></p>
-<ul>
-    <li>Routinematig supportwerk</li>
-    <li>Werk met weinig technische diepgang</li>
-</ul>
-</section>
+  <section id="werkzaamheden">
+    <h2>Werkzaamheden</h2>
+    <p><strong>Leuk:</strong></p>
+    <ul>
+      <li>IT-consultancy</li>
+      <li>Software development</li>
+      <li>Cloud engineering (Azure)</li>
+      <li>ICT bij de politie</li>
+    </ul>
 
-<section>
-<h2>Elevator Pitch</h2>
-<p>
-Mijn naam is Sahel Sediqi, ik ben 23 jaar en studeer HBO-ICT aan De Haagse Hogeschool.
-Ik heb ervaring met Java, C#, React en Git.
-Ik ben een teamplayer en altijd gemotiveerd om nieuwe vaardigheden te leren.
-</p>
-</section>
+    <p><strong>Minder leuk:</strong></p>
+    <ul>
+      <li>Routinematig supportwerk</li>
+      <li>Werk met weinig technische diepgang</li>
+    </ul>
+  </section>
+
+  <section id="elevator">
+    <h2>Elevator Pitch</h2>
+    <p>Mijn naam is Sahel Sediqi, ik ben 23 jaar en studeer HBO-ICT aan De Haagse Hogeschool. Ik heb ervaring met Java, C#, React en Git. Ik ben een teamplayer en altijd gemotiveerd om nieuwe vaardigheden te leren.</p>
+  </section>
+
+  <footer>
+    &copy; 2026 Sahel Sediqi - Alle rechten voorbehouden
+  </footer>
 
 </body>
 </html>
