@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="flex h-screen bg-gray-100 font-sans">
+<body class="flex min-h-screen bg-gray-100 font-sans">
 
     <!-- Sidebar -->
-    <aside class="w-64 bg-blue-900 text-white flex-shrink-0">
+    <aside class="w-64 bg-blue-900 text-white flex-shrink-0 hidden md:block">
         <div class="p-6 text-center border-b border-blue-800">
             <h1 class="text-2xl font-bold">Sahel Sediqi</h1>
             <p class="text-sm text-gray-300 mt-1">HBO-ICT</p>
@@ -19,121 +18,134 @@
         <nav class="mt-6">
             <ul>
                 <li><a href="index.html" class="block py-3 px-6 bg-blue-800">Event - Job-Event</a></li>
-                <li><a href="les1.html" class="block py-3 px-6 hover:bg-blue-800 transition">Les 1</a></li>
-                <li><a href="les2.html" class="block py-3 px-6 hover:bg-blue-800 transition">Les 2</a></li>
-                <li><a href="les3.html" class="block py-3 px-6 hover:bg-blue-800 transition">Les 3</a></li>
+                <li><a href="les1.html" class="block py-3 px-6 hover:bg-blue-800">Les 1</a></li>
+                <li><a href="les2.html" class="block py-3 px-6 hover:bg-blue-800">Les 2</a></li>
+                <li><a href="les3.html" class="block py-3 px-6 hover:bg-blue-800">Les 3</a></li>
             </ul>
         </nav>
     </aside>
 
-    <!-- Main Content -->
-    <main class="flex-1 overflow-auto p-8">
-        <h2 class="text-3xl font-bold mb-6">Event - Job-Event</h2>
+    <!-- Main -->
+    <main class="flex-1 p-6 md:p-10 overflow-auto">
+        <h2 class="text-3xl font-bold mb-8">Event - Job-Event</h2>
 
         <!-- Masterclass Politie -->
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition mb-6">
-            <h3 class="text-xl font-semibold mb-4">Masterclass Politie</h3>
+        <div class="bg-white p-6 rounded-xl shadow mb-6">
+            <h3 class="text-xl font-bold mb-4 text-blue-900">Masterclass Politie</h3>
 
-            <div class="flex flex-col md:flex-row gap-4 items-start">
-                <img src="politie.jpg" alt="Politie"
-                    class="w-24 h-24 object-contain rounded-lg shadow">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+                <div class="md:col-span-3">
+                    <p>
+                        In het begin van het job-event ben ik langs geweest bij een masterclass van de politie.
+                        Er werd uitgelegd wat voor werkzaamheden de ICT-afdeling uitvoert, inclusief voorbeelden
+                        van hacken en internationale samenwerkingen.
+                    </p>
+                </div>
 
-                <p>
-                    In het begin van het Job-Event ben ik als eerst langs geweest bij een MasterClass van de politie.
-                    Er werd uitgelegd wat voor soort werkzaamheden bij de politie gedaan worden door de ICT-afdeling.
-                    Het was interessant om te horen hoe sterk Nederland staat op ICT-gebied.
-                </p>
+                <img src="images/politie.jpg"
+                     alt="Politie ICT"
+                     class="w-28 h-28 object-contain mx-auto md:ml-auto bg-gray-50 p-2 rounded-lg border">
             </div>
         </div>
 
         <!-- Bedrijven die ik leuk vind -->
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition mb-6">
-            <h3 class="text-xl font-semibold mb-4">Bedrijven die ik leuk vind</h3>
+        <h3 class="text-2xl font-bold mb-4">Bedrijven die ik leuk vind</h3>
 
-            <!-- Capgemini -->
-            <div class="bg-white p-6 rounded-xl shadow-lg mb-6">
-                <h3 class="text-xl font-bold mb-3 text-blue-900">Capgemini</h3>
+        <!-- Capgemini -->
+        <div class="bg-white p-6 rounded-xl shadow mb-6">
+            <h4 class="text-xl font-bold mb-4 text-blue-900">Capgemini</h4>
 
-                <div class="flex flex-col md:flex-row gap-4 items-start">
-                    <img src="capgemini.jpg" alt="Capgemini"
-                        class="w-24 h-24 object-contain rounded-lg shadow">
-
-                    <div>
-                        <p class="mb-2">
-                            Dit was het eerste bedrijf waar ik mee in gesprek ben gegaan.
-                            Ik kende de medewerkers al omdat ik hier vorig jaar stage liep.
-                        </p>
-                        <p>
-                            Wat ik leuk vind aan Capgemini is de professionele werksfeer,
-                            begeleiding en doorgroeimogelijkheden.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Netcompany -->
-            <div class="bg-white p-6 rounded-xl shadow-lg mb-6">
-                <h3 class="text-xl font-bold mb-3 text-blue-900">Netcompany</h3>
-
-                <div class="flex flex-col md:flex-row gap-4 items-start">
-                    <img src="netcompany.jpg" alt="Netcompany"
-                        class="w-24 h-24 object-contain rounded-lg shadow">
-
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+                <div class="md:col-span-3">
+                    <p class="mb-2">
+                        Dit was het eerste bedrijf waar ik mee in gesprek ben gegaan.
+                        Ik kende de medewerkers al omdat ik hier vorig jaar stage liep.
+                    </p>
                     <p>
-                        Netcompany richt zich op IT-consultancy en digitale oplossingen
-                        voor grote organisaties. Ik vond vooral hun enthousiasme en
-                        manier van werken interessant.
+                        Wat mij aanspreekt is de professionele werksfeer, begeleiding en
+                        de doorgroeimogelijkheden.
                     </p>
                 </div>
-            </div>
 
-            <!-- BetaBit -->
-            <div class="bg-white p-6 rounded-xl shadow-lg mb-6">
-                <h3 class="text-xl font-bold mb-3 text-blue-900">BetaBit</h3>
-
-                <div class="flex flex-col md:flex-row gap-4 items-start">
-                    <img src="betabit.jpg" alt="BetaBit"
-                        class="w-24 h-24 object-contain rounded-lg shadow">
-
-                    <p>
-                        BetaBit werkt veel met Azure-producten. Het is een jong bedrijf
-                        met goede groeimogelijkheden, wat het voor mij extra interessant maakt.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Quintor -->
-            <div class="bg-white p-6 rounded-xl shadow-lg mb-6">
-                <h3 class="text-xl font-bold mb-3 text-blue-900">Quintor</h3>
-
-                <div class="flex flex-col md:flex-row gap-4 items-start">
-                    <img src="quintor.jpg" alt="Quintor"
-                        class="w-24 h-24 object-contain rounded-lg shadow">
-
-                    <p>
-                        Quintor leek qua werkwijze erg op Capgemini.
-                        Ze hadden duidelijke informatie over opdrachten en projecten.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Politie -->
-            <div class="bg-white p-6 rounded-xl shadow-lg">
-                <h3 class="text-xl font-bold mb-3 text-blue-900">Politie (ICT)</h3>
-
-                <div class="flex flex-col md:flex-row gap-4 items-start">
-                    <img src="politie.jpg" alt="Politie ICT"
-                        class="w-24 h-24 object-contain rounded-lg shadow">
-
-                    <p>
-                        De combinatie van ICT en maatschappelijke impact maakt dit
-                        werkveld voor mij erg aantrekkelijk.
-                    </p>
-                </div>
+                <img src="images/capgemini.jpg"
+                     alt="Capgemini"
+                     class="w-28 h-28 object-contain mx-auto md:ml-auto bg-gray-50 p-2 rounded-lg border">
             </div>
         </div>
 
-    </main>
+        <!-- Netcompany -->
+        <div class="bg-white p-6 rounded-xl shadow mb-6">
+            <h4 class="text-xl font-bold mb-4 text-blue-900">Netcompany</h4>
 
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+                <div class="md:col-span-3">
+                    <p>
+                        Netcompany richt zich op IT-consultancy en digitale oplossingen
+                        voor grote organisaties. Het enthousiasme en de manier van werken
+                        spraken mij erg aan.
+                    </p>
+                </div>
+
+                <img src="images/netcompany.jpg"
+                     alt="Netcompany"
+                     class="w-28 h-28 object-contain mx-auto md:ml-auto bg-gray-50 p-2 rounded-lg border">
+            </div>
+        </div>
+
+        <!-- BetaBit -->
+        <div class="bg-white p-6 rounded-xl shadow mb-6">
+            <h4 class="text-xl font-bold mb-4 text-blue-900">BetaBit</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+                <div class="md:col-span-3">
+                    <p>
+                        BetaBit werkt veel met Azure-producten. Het is een jong bedrijf
+                        met goede groeimogelijkheden, wat het extra interessant maakt.
+                    </p>
+                </div>
+
+                <img src="images/betabit.jpg"
+                     alt="BetaBit"
+                     class="w-28 h-28 object-contain mx-auto md:ml-auto bg-gray-50 p-2 rounded-lg border">
+            </div>
+        </div>
+
+        <!-- Quintor -->
+        <div class="bg-white p-6 rounded-xl shadow mb-6">
+            <h4 class="text-xl font-bold mb-4 text-blue-900">Quintor</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+                <div class="md:col-span-3">
+                    <p>
+                        Quintor leek qua opdrachten en werkwijze sterk op Capgemini.
+                        De informatie en projecten spraken mij aan.
+                    </p>
+                </div>
+
+                <img src="images/quintor.jpg"
+                     alt="Quintor"
+                     class="w-28 h-28 object-contain mx-auto md:ml-auto bg-gray-50 p-2 rounded-lg border">
+            </div>
+        </div>
+
+        <!-- Netwerkresultaten -->
+        <div class="bg-white p-6 rounded-xl shadow mb-6">
+            <h3 class="text-xl font-bold mb-2 text-blue-900">Netwerkresultaten</h3>
+            <p>
+                Ik heb gesprekken gevoerd met meerdere bedrijven en mij ingeschreven
+                voor de stagemarkt van Capgemini.
+            </p>
+        </div>
+
+        <!-- Algemene indruk -->
+        <div class="bg-white p-6 rounded-xl shadow">
+            <h3 class="text-xl font-bold mb-2 text-blue-900">Algemene indruk</h3>
+            <p>
+                Het job-event was leerzaam en gaf mij een goed beeld van mijn mogelijkheden
+                binnen de ICT. Vooral de politie en consultancybedrijven spraken mij aan.
+            </p>
+        </div>
+
+    </main>
 </body>
 </html>
